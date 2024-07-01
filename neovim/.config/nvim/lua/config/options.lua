@@ -6,6 +6,7 @@ vim.g.lazyvim_statuscolumn = {
   folds_open = true,
   folds_githl = false,
 }
+vim.g.lazyvim_prettier_needs_config = false
 
 local opt = vim.opt
 
