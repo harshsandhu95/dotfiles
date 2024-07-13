@@ -4,5 +4,4 @@
 
 local map = LazyVim.safe_keymap_set
 
---- Escape
 map("i", "jk", "<cmd>noh<cr><esc>", { desc = "Escape using jk" })
