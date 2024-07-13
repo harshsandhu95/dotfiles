@@ -7,16 +7,15 @@
 
 /** ********** Fonts ********** **/
 * {
-  font-family: "FiraCode Nerd Font", "Iosevka Nerd Font", archcraft,
-    sans-serif;
+  font-family: "FiraCode Nerd Font", "Iosevka Nerd Font", archcraft, sans-serif;
   font-size: 12px;
 }
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-  background-color: @background;
+  background-color: transparent;
   color: @background;
-  border-bottom: 2px solid @background-alt;
+  /*border-bottom: 2px solid @background-alt;*/
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -81,8 +80,8 @@ window#waybar.hidden {
 
 /** ***** Idle Inhibitor ***** **/
 #idle_inhibitor {
-  background-color: @green;
-  color: @background;
+  background-color: @background-alt;
+  color: @foreground;
 }
 #idle_inhibitor.deactivated {
   background-color: @red;
@@ -238,7 +237,6 @@ window#waybar.hidden {
 #memory,
 #mpd,
 #custom-spotify,
-#idle_inhibitor,
 #tray,
 #pulseaudio,
 #network {
@@ -247,4 +245,10 @@ window#waybar.hidden {
   padding: 2px 8px;
   background-color: @background-alt;
   color: @foreground;
+}
+
+#idle_inhibitor {
+  margin: 6px 0px;
+  padding: 2px 8px;
+  border-radius: 16px;
 }
