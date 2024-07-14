@@ -1,14 +1,9 @@
--- Catppuccin Config
-
 return {
   {
     "catppuccin/nvim",
+    lazy = true,
     name = "catppuccin",
-    priority = 1000,
     opts = {
-      flavour = "mocha",
-      transparent_background = true,
-      show_end_of_buffer = true,
       integrations = {
         aerial = true,
         alpha = true,
@@ -46,5 +41,10 @@ return {
       },
     },
   },
-  { "LazyVim/LazyVim", opts = { colorscheme = "catppuccin" } },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
+  },
 }
