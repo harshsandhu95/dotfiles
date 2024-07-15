@@ -6,12 +6,12 @@
 
 THEME='Catppuccin-Mocha'
 ICONS='Luv-Folders-Dark'
-FONT='Noto Sans 9'
+FONT='Bricolage Grotesque 9'
 CURSOR='Sweet'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
-apply_themes () {
+apply_themes() {
 	${SCHEMA} gtk-theme "$THEME"
 	${SCHEMA} icon-theme "$ICONS"
 	${SCHEMA} cursor-theme "$CURSOR"

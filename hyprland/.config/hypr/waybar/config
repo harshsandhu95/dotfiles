@@ -12,7 +12,7 @@
     "position": "top", 	
     "height": 32, 		
     "width": "", 		
-    "spacing": 4, 		
+    "spacing": 8, 		
     "margin": 0, 		
     "margin-top": 0, 	
     "margin-bottom": 0, 
@@ -23,6 +23,7 @@
  
     "modules-left": ["custom/menu", "cpu", "memory", "disk"],
     // "modules-center": ["idle_inhibitor", "mpd", "tray"],
-    "modules-center": ["idle_inhibitor", "custom/spotify", "tray"],
+    // "modules-center": ["idle_inhibitor", "custom/spotify", "tray"],
+    "modules-center": ["idle_inhibitor", "custom/spotify"],
     "modules-right": ["pulseaudio", "backlight", "network", "battery", "clock", "custom/power"]
 }

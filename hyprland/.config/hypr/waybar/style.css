@@ -91,6 +91,7 @@ window#waybar.hidden {
 /** ********** Tray ********** **/
 #tray {
   background-color: @background-alt;
+  color: @foreground;
 }
 #tray > .passive {
   -gtk-icon-effect: dim;
@@ -99,6 +100,8 @@ window#waybar.hidden {
   -gtk-icon-effect: highlight;
 }
 #tray > .active {
+  background-color: @background-alt;
+  color: @foreground;
 }
 
 /** ********** MPD ********** **/
@@ -190,6 +193,7 @@ window#waybar.hidden {
 /** ********** Network ********** **/
 #network {
   background-color: @background-alt;
+  color: @foreground;
 }
 
 #network.disconnected,
@@ -198,10 +202,13 @@ window#waybar.hidden {
   color: @foreground;
 }
 #network.linked {
+  color: @foreground;
 }
 #network.ethernet {
+  color: @foreground;
 }
 #network.wifi {
+  color: @foreground;
 }
 
 /** ********** Custom ********** **/

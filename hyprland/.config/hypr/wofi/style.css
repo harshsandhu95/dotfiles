@@ -13,59 +13,62 @@
 
 /** ********** Fonts ********** **/
 * {
-	font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
-	font-size: 14px;
+  font-family: "Bricolage Grotesque", "Iosevka Nerd Font", archcraft, sans-serif;
+  font-size: 14px;
 }
 
 #window {
-	background-color: @background;
-	color: @foreground;
-	border: 0px solid @background-alt;
-	border-radius: 0px;
+  background-color: @background;
+  color: @foreground;
+  border: 0px solid @background-alt;
+  border-radius: 0px;
 }
 
 #outer-box {
-	padding: 16px;
+  padding: 16px;
 }
 
 #input {
-	background-color: @background-alt;
-	border: 0px solid @blue;
-	padding: 1px 10px;
+  background-color: @background-alt;
+  border: 0px solid @blue;
+  padding: 1px 10px;
 }
 
 #scroll {
-	margin-top: 16px;
+  margin-top: 16px;
 }
 
-#inner-box {}
+#inner-box {
+}
 
 #img {
-	padding-right: 8px;
+  padding-right: 8px;
 }
 
 #text {
-	color: @foreground;
+  color: @foreground;
 }
 
 #text:selected {
-	color: @background;
+  color: @background;
 }
 
 #entry {
-	padding: 6px;
+  padding: 6px;
 }
 
 #entry:selected {
-	background-color: @blue;
-	color: @background;
+  background-color: @blue;
+  color: @background;
 }
 
-#unselected {}
+#unselected {
+}
 
-#selected {}
+#selected {
+}
 
 #input,
 #entry:selected {
-	border-radius: 2px;
+  border-radius: 2px;
 }
